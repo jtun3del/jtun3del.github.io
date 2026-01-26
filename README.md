@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- bootstrap css -->
@@ -87,4 +87,4 @@
 </html>
 =======
 # jtun3del.github.io
->>>>>>> 243c7854f8179fd93ebca28dc9de927071d9f6e8
+
