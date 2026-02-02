@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <!-- bootstrap css -->
@@ -15,6 +14,8 @@
 <link rel="stylesheet" href="client.css" />
 <!-- bootstrap icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- client js -->
+<script src="discount.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -79,7 +80,51 @@
         <div class="p-4 m-2 rounded-3 border border-secondary-subtle">
             <p class="fs-4">Hello World! </p>
             <hr class="fs-4">
-            <p class=""fs-2> Buy my Products</p>
+            <p class="" fs-2> Buy my Products</p>
+        </div>
+        <div class="row p-2 m-2" id="discount-row">
+            <div class="col px-2 py-4">
+                <h3>Tis the seasoning</h3>
+                <div class="mb-4">
+                    Order today! Save 12.5% on Chef Anton's Italian Seasoning.
+                    You don't want to make Chef Anton mad, do you?
+                </div>
+                <i>Discount expires: 2/25/2025</i><br />
+                <i class="bi bi-receipt"></i>  <a href="#" class="discount"  data-product="Chef Anton's Italian Seasoning"
+                data-title="Save 15% Off" data-code="3242424">Discount Code</a>
+            </div>
+            <div class="col px-2 py-4">
+                <h3>free pizza</h3>
+                <div class="mb-4">
+                    pizza for free
+                </div>
+                <i>Discount expires: 2/25/2025</i><br />
+                <i class="bi bi-receipt"></i>  <a href="#" class="discount"  data-product="free pizza"
+                data-title="Save 100%" data-code="74646">Discount Code</a>
+            </div>
+            <div class="col px-2 py-4">
+                <h3>half off on breadsticks</h3>
+                <div class="mb-4">
+                    half off on bread stick
+                </div>
+                <i>Discount expires: 2/25/2025</i><br />
+                <i class="bi bi-receipt"></i>  <a href="#" class="discount"  data-product="breadstick"
+                data-title="Save 50%" data-code="53212">Discount Code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+            <div class="toast-header">
+                <strong class="me-auto" id="product">Product</strong>
+                <small class="text-body-secondary" id="title">discount title</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id= "code">
+                Discount Code: 1234
+            </div>
         </div>
     </div>
 </body>
@@ -87,4 +132,3 @@
 </html>
 =======
 # jtun3del.github.io
-
